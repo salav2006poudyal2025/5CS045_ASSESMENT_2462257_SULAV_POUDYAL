@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Call fetchBooks when category changes
     category.addEventListener("change", fetchBooks);
 
-    // Call fetchBooks when year changes
-    year.addEventListener("change", fetchBooks);
+    // Call fetchBooks whenever user types in the year box
+    year.addEventListener("input", fetchBooks);
 
     // Load all books when the page loads for the first time
     fetchBooks();
